@@ -6,17 +6,31 @@ header {
   flex-direction: column;
   position: relative;
 }
-header nav {
+.header_nav {
   display: flex;
   justify-content: space-between;
 }
-.header__nav__menu {
+nav {
   position: absolute;
   right: 0;
   height: 100vh;
-  width: 230px;
+  width: 254px;
   background-color: white;
-  filter: blur(3px);
-  font-size: 1.8rem;
+  /* filter: blur(3px); */
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
   text-transform: uppercase;
+}
+.header__nav__menu {
+  position: absolute;
+  top: 90px;
+  font-family: "Barlow Condensed", sans-serif;
+  list-style: none;
+}
+.header__nav__menu_item {
+  padding: 15px 30px;
+}
+.header__nav__menu_item span {
+  font-weight: 700;
 }
