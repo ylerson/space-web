@@ -7,21 +7,26 @@ header {
   position: relative;
 }
 .header_nav {
+  padding: 24px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 nav {
+  display: none;
   position: absolute;
   right: 0;
   height: 100vh;
   width: 254px;
-  background-color: white;
-  /* filter: blur(3px); */
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5px);
   font-size: 1.6rem;
   line-height: 1.9rem;
   letter-spacing: 2.7px;
+  color: white;
   text-transform: uppercase;
 }
+
 .header__nav__menu {
   position: absolute;
   top: 90px;
@@ -33,4 +38,17 @@ nav {
 }
 .header__nav__menu_item span {
   font-weight: 700;
+}
+/* Hamburger Icon */
+.header__nav__icon {
+  background: url("../assets/shared/icon-hamburger.svg");
+  width: 24px;
+  height: 21px;
+}
+.header__nav__logo {
+  width: 40px;
+  height: 40px;
+}
+.header__nav__logo img {
+  width: 100%;
 }
