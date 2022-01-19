@@ -20,4 +20,5 @@ body {
   background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
