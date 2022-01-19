@@ -1,0 +1,20 @@
+@import "mobile-desing.css";
+
+:root {
+  --blue-sky: #d0d6f9;
+  --blue-dark: #0b0d17;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+body {
+  background-image: url("../assets/home/background-home-mobile.jpg");
+}

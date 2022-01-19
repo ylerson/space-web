@@ -1,0 +1,22 @@
+/* Header Style */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav__menu {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 230px;
+  background-color: white;
+  filter: blur(3px);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
