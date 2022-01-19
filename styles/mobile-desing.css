@@ -1,3 +1,5 @@
+/* Home Desing */
+
 /* Header Style */
 
 header {
@@ -51,4 +53,64 @@ nav {
 }
 .header__nav__logo img {
   width: 100%;
+}
+.header__bio {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 327px;
+  height: 276px;
+}
+.header__bio__title {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--blue-sky);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.header__bio__title span {
+  font-size: 8rem;
+  line-height: 10rem;
+  color: white;
+  font-family: "Bellefair", serif;
+  letter-spacing: 0;
+}
+.header__bio__info {
+  color: var(--blue-sky);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: "Barlow", sans-serif;
+}
+/* Main  Style*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+.main__explore {
+  width: 150px;
+  height: 150px;
+}
+.main__explore__button {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  outline: none;
+  font-family: "Bellefair", serif;
+  letter-spacing: 1.25px;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  text-align: center;
 }
