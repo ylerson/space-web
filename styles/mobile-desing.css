@@ -36,7 +36,7 @@ nav {
 .nav--animate-close {
   transition: 1s all ease-in;
   animation-name: fadeInRight;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   background-attachment: fixed;
 }
 @keyframes fadeInLeft {
@@ -75,6 +75,10 @@ nav {
 }
 .header__nav__menu_item span {
   font-weight: 700;
+}
+.header__nav__menu_item a {
+  text-decoration: none;
+  color: white;
 }
 /* Hamburger Icon */
 .header__nav__icon {
@@ -160,4 +164,125 @@ main {
   text-transform: uppercase;
   color: var(--blue-dark);
   text-align: center;
+}
+
+/* Detination */
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 24px;
+  margin-bottom: 58px;
+}
+.main__container__title {
+  font-size: 1.6rem;
+  letter-spacing: 2.7px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main__container__title span {
+  opacity: 0.2;
+}
+.main__container__destination {
+  width: 259px;
+  height: 259px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container__destination img {
+  width: 170px;
+  height: 170px;
+}
+.main__menu__destination {
+  display: flex;
+
+  list-style: none;
+}
+.main__menu__destination__item {
+  padding: 10px 10px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.main__menu__destination__item--active {
+  border-bottom: 2px solid white;
+}
+.main__menu__destination__item a {
+  text-decoration: none;
+  color: white;
+}
+.main__container__name {
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+.main__container__info {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  line-height: 2.5rem;
+  color: var(--blue-sky);
+}
+.main__container--border {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--blue-sky);
+}
+.main__container__data {
+  display: flex;
+  flex-direction: column;
+}
+.main__container__data__distance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.main__container__data__distance__title {
+  font-size: 1.4rem;
+  color: var(--blue-sky);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.36px;
+}
+.main__container__data__distance__info {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main__container__data__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.main__container__data__time__title {
+  font-size: 1.4rem;
+  color: var(--blue-sky);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+}
+.main__container__data__time__info {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
 }
