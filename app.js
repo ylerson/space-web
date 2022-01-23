@@ -18,18 +18,19 @@ MENU_ICON_CLOSE.addEventListener("click", () => {
 });
 
 const selectDestiny = {
-  moon: document.getElementById("moon"),
-  mars: document.getElementById("mars"),
-  europa: document.getElementById("europa"),
-  titan: document.getElementById("titan")
+  moon: document?.getElementById("moon"),
+  mars: document?.getElementById("mars"),
+  europa: document?.getElementById("europa"),
+  titan: document?.getElementById("titan")
 };
 
 const editData = {
-  title: document.getElementById("destiny_name"),
-  info: document.getElementById("destiny_info"),
-  distance: document.getElementById("destiny_distance"),
-  time: document.getElementById("destiny_time"),
-  image: document.getElementById("planet_imagen")
+  title: document?.getElementById("destiny_name"),
+  role: document?.getElementById("destiny_role"),
+  info: document?.getElementById("destiny_info"),
+  distance: document?.getElementById("destiny_distance"),
+  time: document?.getElementById("destiny_time"),
+  image: document?.getElementById("planet_imagen")
 };
 
 const dataDestiny = {
@@ -39,12 +40,26 @@ const dataDestiny = {
   titan: ""
 };
 
-getData().then(({ destinations }) => {
+const dataCrew = {
+  one: "",
+  two: "",
+  three: "",
+  four: ""
+};
+
+getData().then(({ destinations, crew }) => {
   dataDestiny.moon = destinations[0];
   dataDestiny.mars = destinations[1];
   dataDestiny.europa = destinations[2];
   dataDestiny.titan = destinations[3];
+
+  dataCrew.one = crew[0];
+  dataCrew.two = crew[1];
+  dataCrew.three = crew[2];
+  dataCrew.four = crew[3];
 });
+
+// Select Destiny
 const isActive = document.getElementsByClassName(
   "main__menu__destination__item"
 );
@@ -67,15 +82,43 @@ const renderData = (value) => {
   }
 };
 
-selectDestiny.moon.addEventListener("click", () => {
-  renderData("moon");
-});
-selectDestiny.mars.addEventListener("click", () => {
-  renderData("mars");
-});
-selectDestiny.europa.addEventListener("click", () => {
-  renderData("europa");
-});
-selectDestiny.titan.addEventListener("click", () => {
-  renderData("titan");
-});
+if (selectDestiny.moon) {
+  selectDestiny.moon.addEventListener("click", () => {
+    renderData("moon");
+  });
+  selectDestiny.mars.addEventListener("click", () => {
+    renderData("mars");
+  });
+  selectDestiny.europa.addEventListener("click", () => {
+    renderData("europa");
+  });
+  selectDestiny.titan.addEventListener("click", () => {
+    renderData("titan");
+  });
+}
+
+// Select Crew
+const selectCrew = document.getElementsByClassName(
+  "main__container__selector__item"
+);
+
+const renderDataCrew = (value) => {
+  editData.title.innerText = dataCrew[value].name;
+  editData.role.innerText = dataCrew[value].role;
+  editData.info.innerText = dataCrew[value].bio;
+  editData.image.setAttribute("src", dataCrew[value].images.png);
+
+  for (let i = 0; i <= 3; i++) {
+    if (selectCrew[i].getAttribute("id") !== value) {
+      selectCrew[i].classList.remove("main__container__selector__item--active");
+    } else {
+      selectCrew[i].classList.add("main__container__selector__item--active");
+    }
+  }
+};
+
+for (let crew of selectCrew) {
+  crew.addEventListener("click", (e) => {
+    renderDataCrew(crew.getAttribute("id"));
+  });
+}

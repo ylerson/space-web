@@ -34,7 +34,7 @@ body {
   border-bottom: 1px solid var(--blue-sky);
 }
 .main__container__crew img {
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
 }
 .main__container__data {
@@ -54,8 +54,14 @@ body {
   width: 10px;
   height: 10px;
   background: white;
+  opacity: 0.17;
   border-radius: 50%;
+  cursor: pointer;
 }
+.main__container__selector__item--active {
+  opacity: 1;
+}
+
 .main__container__data h2 {
   font-size: 1.6rem;
   text-transform: uppercase;
