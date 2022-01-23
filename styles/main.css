@@ -15,6 +15,7 @@ html,
 body {
   font-size: 62.5%;
   font-family: "Bellefair", serif;
+  scroll-behavior: smooth;
 }
 body {
   background-image: url("../assets/home/background-home-mobile.jpg");

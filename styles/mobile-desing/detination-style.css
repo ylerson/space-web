@@ -2,7 +2,6 @@
 body {
   background: url("../../assets/destination/background-destination-mobile.jpg");
   background-attachment: fixed;
-  mix-blend-mode: screen;
 }
 .main__container {
   display: flex;
@@ -49,14 +48,13 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
 }
 .main__menu__destination__item--active {
   border-bottom: 2px solid white;
 }
-.main__menu__destination__item a {
-  text-decoration: none;
-  color: white;
-}
+
 .main__container__name {
   font-size: 5.6rem;
   text-transform: uppercase;

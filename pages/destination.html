@@ -63,20 +63,31 @@
         <span>01</span> Pick your Destination
       </h1>
       <div class="main__container__destination">
-        <img src="../assets/destination/image-moon.png" alt="Destination" />
+        <img
+          id="planet_imagen"
+          src="../assets/destination/image-moon.png"
+          alt="Destination"
+        />
       </div>
       <ul class="main__menu__destination">
         <li
+          id="moon"
           class="main__menu__destination__item main__menu__destination__item--active"
         >
-          <a href="">moon</a>
+          <span>moon</span>
         </li>
-        <li class="main__menu__destination__item"><a href="">mars</a></li>
-        <li class="main__menu__destination__item"><a href="">europa</a></li>
-        <li class="main__menu__destination__item"><a href="">titan</a></li>
+        <li id="mars" class="main__menu__destination__item">
+          <span>mars</span>
+        </li>
+        <li id="europa" class="main__menu__destination__item">
+          <span>europa</span>
+        </li>
+        <li id="titan" class="main__menu__destination__item">
+          <span>titan</span>
+        </li>
       </ul>
-      <h2 class="main__container__name">Moon</h2>
-      <p class="main__container__info">
+      <h2 id="destiny_name" class="main__container__name">Moon</h2>
+      <p id="destiny_info" class="main__container__info">
         See our planet as you’ve never seen it before. A perfect relaxing trip
         away to help regain perspective and come back refreshed. While you’re
         there, take in some history by visiting the Luna 2 and Apollo 11 landing
@@ -86,15 +97,22 @@
       <section class="main__container__data">
         <div class="main__container__data__distance">
           <p class="main__container__data__distance__title">AVG. DISTANCE</p>
-          <p class="main__container__data__distance__info">384,400 km</p>
+          <p
+            id="destiny_distance"
+            class="main__container__data__distance__info"
+          >
+            384,400 km
+          </p>
         </div>
         <div class="main__container__data__time">
           <p class="main__container__data__time__title">Est. travel time</p>
-          <p class="main__container__data__time__info">3 days</p>
+          <p id="destiny_time" class="main__container__data__time__info">
+            3 days
+          </p>
         </div>
       </section>
     </section>
 
-    <script src="../app.js"></script>
+    <script src="../app.js" type="module"></script>
   </body>
 </html>

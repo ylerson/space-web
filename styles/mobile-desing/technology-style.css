@@ -1,0 +1,83 @@
+/* Detination */
+body {
+  background: url("../../assets/technology/background-technology-mobile.jpg");
+  background-attachment: fixed;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+  padding: 0 24px;
+  margin-bottom: 58px;
+}
+.main__container__title {
+  font-size: 1.6rem;
+  letter-spacing: 2.7px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.main__container__title span {
+  opacity: 0.2;
+}
+.main__container__crew {
+  width: 374px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container__crew img {
+  width: 100%;
+  height: 100%;
+}
+.main__container__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main__container__selector {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin-top: 32px;
+}
+.main__container__selector__item {
+  width: 40px;
+  height: 40px;
+  color: var(--blue-dark);
+  background: white;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container__data h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--blue-sky);
+  /* opacity: 0.4; */
+}
+.main__container__data h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+}
+.main__container__data p {
+  font-size: 1.5rem;
+  font-family: "Barlow", sans-serif;
+  color: var(--blue-sky);
+  text-align: center;
+  line-height: 2.5rem;
+}
